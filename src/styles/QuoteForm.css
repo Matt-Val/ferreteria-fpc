@@ -1,0 +1,132 @@
+.quote-section {
+  padding: 5rem 0;
+  background-color: #f4f4f4;
+}
+
+.quote-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.quote-info .section-label {
+  color: #dd6331;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.quote-info .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.quote-info .section-title span {
+  color: #dd6331;
+}
+
+.quote-text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pill {
+  background: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  border-left: 4px solid #dd6331;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Estilos del Formulario */
+.quote-form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #dd6331;
+  outline: none;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.btn-submit {
+  width: 100%;
+  background: #dd6331;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.btn-submit:hover {
+  background: #b34a1e;
+}
+
+@media (max-width: 991px) {
+  .quote-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .quote-info {
+    text-align: center;
+  }
+  
+  .contact-pills {
+    align-items: center;
+  }
+}

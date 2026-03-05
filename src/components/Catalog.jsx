@@ -36,8 +36,25 @@ const Catalog = () => {
 
             <div className="product-grid">
 
-                {products.map((product))}
+                {products.map((product) => ( 
+                    <div key={product.id} className="product-card">
+                        <div className="product-image-container">
+                            <img src={product.image} alt={product.name} className="product-image" />
+                        </div>
+
+                        <div className="product-info">
+                            <span className="product-category">{product.category}</span>
+                            <h3 className="product-name">{product.name}</h3>
+                            <p className="product-price">${product.price.toLocaleString('es-CL')}</p>
+                            <button className="btn-quote">
+                                Cotizar Producto
+                            </button>
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
-    )
-}
+    );
+};
+
+export default Catalog;
