@@ -1,65 +1,73 @@
+/* ─── Quote Section ─── */
 .quote-section {
-  padding: 5rem 0;
-  background-color: #f4f4f4;
+  padding: 5rem 0 4rem;
+  background: var(--color-bg-darker);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .quote-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.4fr;
   gap: 4rem;
   align-items: center;
 }
 
-.quote-info .section-label {
-  color: #dd6331;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  display: block;
+/* ─── Left info pane ─── */
+
+.quote-info .section-title {
+  text-align: left;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   margin-bottom: 1rem;
 }
 
-.quote-info .section-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
+.quote-info .section-title span {
+  color: var(--color-orange);
 }
 
-.quote-info .section-title span {
-  color: #dd6331;
+.quote-info .section-label {
+  text-align: left;
 }
 
 .quote-text {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
 }
 
-.contact-pills {
+.quote-benefits {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.quote-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+.quote-benefits li svg {
+  color: var(--color-orange);
+  flex-shrink: 0;
+}
+
+/* ─── Form card ─── */
+.quote-form-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2rem 1.75rem;
+}
+
+.quote-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.pill {
-  background: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-  border-left: 4px solid #dd6331;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-/* Estilos del Formulario */
-.quote-form {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
 }
 
 .form-row {
@@ -68,65 +76,93 @@
   gap: 1rem;
 }
 
-.form-group label {
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  color: #333;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
-.form-group input, 
+.form-group input,
+.form-group select,
 .form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #fafafa;
-  transition: border-color 0.3s ease;
-}
-
-.form-group input:focus, 
-.form-group textarea:focus {
-  border-color: #dd6331;
+  background: var(--color-bg-darker);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 0.88rem;
+  padding: 0.7rem 0.9rem;
   outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #555;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px var(--color-orange-glow);
+}
+
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23aaa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  padding-right: 2.2rem;
+  color: var(--color-text-muted);
+}
+
+.form-group select option {
+  background: #1a1a1a;
 }
 
 .form-group textarea {
-  height: 120px;
-  resize: vertical;
+  resize: none;
+  min-height: 110px;
 }
 
 .btn-submit {
-  width: 100%;
-  background: #dd6331;
-  color: white;
-  border: none;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--color-orange);
+  color: #fff;
+  font-family: inherit;
   font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  border: none;
+  border-radius: var(--radius);
   cursor: pointer;
-  transition: background 0.3s ease;
-  border-radius: 4px;
-  margin-top: 1rem;
+  width: 100%;
+  transition: background var(--transition), box-shadow var(--transition), transform 0.15s ease;
+  margin-top: 0.5rem;
 }
 
 .btn-submit:hover {
-  background: #b34a1e;
+  background: var(--color-orange-dark);
+  box-shadow: var(--shadow-orange);
+  transform: translateY(-1px);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 860px) {
   .quote-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
-  
-  .quote-info {
-    text-align: center;
-  }
-  
-  .contact-pills {
-    align-items: center;
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,9 +1,8 @@
+/* ─── Brands Section ─── */
 .brands {
-  padding: 4rem 0;
-  background-color: #f9f9f9;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  overflow: hidden;
+  padding: 5rem 0 4rem;
+  background: var(--color-bg-card);
+  border-top: 1px solid var(--color-border);
 }
 
 .brands-header {
@@ -11,64 +10,55 @@
   margin-bottom: 3rem;
 }
 
-.brands-title {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #666;
-  letter-spacing: 2px;
-  font-weight: 700;
+.brands-header .section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
 }
 
-.brands-divider {
-  width: 50px;
-  height: 3px;
-  background-color: #dd6331; 
-  margin: 1rem auto 0;
-}
-
-.brands-slider {
-  position: relative;
-  width: 100%;
-}
-
-.brands-track {
+/* ─── Logo Grid ─── */
+.brands-grid {
   display: flex;
-  align-items: center;
-  gap: 4rem;
-  /* Aquí podrías añadir una animación de scroll infinito con CSS keyframes */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .brand-item {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 140px;
+  height: 72px;
+  background: var(--color-bg-darker);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  flex-shrink: 0;
+}
+
+.brand-item:hover {
+  border-color: var(--color-orange);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .brand-logo {
   max-width: 100%;
-  max-height: 100%;
-  filter: grayscale(100%); 
-  opacity: 0.6;
-  transition: all 0.3s ease;
+  max-height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.65;
+  transition: opacity var(--transition), filter var(--transition);
 }
 
-.brand-logo:hover {
-  filter: grayscale(0%); /* Cobra vida al pasar el mouse */
+.brand-item:hover .brand-logo {
   opacity: 1;
-  transform: scale(1.1);
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(0deg);
 }
 
-@media (max-width: 768px) {
-  .brands-track {
-    gap: 2rem;
-    overflow-x: auto;
-    padding-bottom: 1rem;
-  }
-  
+@media (max-width: 600px) {
   .brand-item {
-    width: 100px;
+    width: 110px;
+    height: 60px;
   }
 }
