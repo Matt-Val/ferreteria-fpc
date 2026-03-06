@@ -52,6 +52,11 @@ const Footer = () => {
           <ul className="footer-links">
             <li>
               <PhoneIcon />
+              <a href="tel:+56948542010">+56 9 4854 2010</a>
+            </li>
+
+            <li>
+              <PhoneIcon />
               <a href="tel:+56954274397">+56 9 5427 4397</a>
             </li>
             <li>
@@ -60,11 +65,13 @@ const Footer = () => {
             </li>
             <li>
               <MapIcon />
-              Chile
+              Silvia 23, Quilpué
             </li>
           </ul>
         </div>
       </div>
+
+      <br /> 
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
