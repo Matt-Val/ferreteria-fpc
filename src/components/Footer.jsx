@@ -29,9 +29,10 @@ const Footer = () => {
             </div>
           </div>
           <p className="footer-tagline">
-            Expertos ferreteros industriales. Equipos de soldadura,
-            seguridad industrial y herramientas de mano con servicio en
-            todo Chile.
+            Empresa dedicada al ámbito industrial, 
+            especializado en todo tipo de insumos de soldadura, 
+            seguridad industrial, refrigeración, máquinas, 
+            herramientas y gases con 25 años de experiencia en el rubro.
           </p>
         </div>
 

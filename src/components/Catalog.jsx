@@ -4,10 +4,9 @@ import '../styles/Catalog.css';
 const productsData = {
   soldadura: [
     {
-      name: "Soldadora MIG 200A",
-      price: "$189.990",
-      image: "/cat-soldadura.jpg",
-      description: "Soldadora MIG/MAG profesional con regulación digital.",
+      name: "Máquina de Soldar MIG 250 ",
+      image: "public/soldadura-mig.jpg",
+      description: "Soldadora inversora semi-industrial con doble proceso MIG y MMA",
       category: "Equipos para Soldar"
     },
     {
