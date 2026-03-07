@@ -11,21 +11,18 @@ const productsData = {
     },
     {
       name: "Soldadora TIG AC/DC 250A",
-      price: "$349.990",
       image: "/cat-soldadura.jpg",
       description: "Soldadura TIG para aluminio y acero inoxidable.",
       category: "Equipos para Soldar"
     },
     {
       name: "Soldadora Arco Manual 160A",
-      price: "$79.990",
       image: "/cat-soldadura.jpg",
       description: "Ideal para trabajos ligeros y reparaciones.",
       category: "Equipos para Soldar"
     },
     {
       name: "Electrodos 6011 (5kg)",
-      price: "$24.990",
       image: "/cat-soldadura.jpg",
       description: "Electrodos multipropósito de alta penetración.",
       category: "Equipos para Soldar"
@@ -33,59 +30,51 @@ const productsData = {
   ],
   seguridad: [
     {
-      name: "Casco MSA V-Gard",
-      price: "$18.990",
-      image: "/cat-seguridad.jpg",
-      description: "Casco certificado para industria y construcción.",
+      name: "Guante Cabritilla",
+      image: "public/guante-cabritilla.png",
+      description: "Guante de cuero suave y flexible, ideal para trabajos que requieren destreza y protección.",
       category: "Ropa Seguridad Industrial"
     },
     {
-      name: "Overol Ignifugo Talla M",
-      price: "$54.990",
-      image: "/cat-seguridad.jpg",
-      description: "Protección térmica certificada EN 531.",
+      name: "Coleto Soldador de Cuero",
+      image: "public/coleto-soldador.png",
+      description: "Coleto de cuero profesional con alta resistencia al calor, chispas y salpicaduras.",
       category: "Ropa Seguridad Industrial"
     },
     {
-      name: "Guantes de Cuero Soldador",
-      price: "$9.990",
-      image: "/cat-seguridad.jpg",
-      description: "Protección de manos para trabajos de soldadura.",
+      name: "Overol Poplin con Reflectante",
+      image: "public/overol-poplin.jpg",
+      description: "Overol de trabajo con cintas reflectantes para mayor visibilidad y seguridad.",
       category: "Ropa Seguridad Industrial"
     },
     {
-      name: "Pantalla de Soldadura Auto",
-      price: "$34.990",
-      image: "/cat-seguridad.jpg",
-      description: "Oscurecimiento automático DIN 9-13.",
+      name: "Zapatos de Seguridad Punta Acero",
+      image: "public/zapato-seguridad.jpg",
+      description: "Calzado de seguridad con punta de acero y suela antideslizante.",
       category: "Ropa Seguridad Industrial"
     },
   ],
   herramientas: [
     {
-      name: "Juego de Llaves 12 pzas",
-      price: "$29.990",
-      image: "/cat-herramientas.jpg",
-      description: "Acero cromo-vanadio, llaves combinadas.",
+      name: "Taladro Percutor Inalámbrico Makita",
+      image: "public/taladro-percutor-makita.jpg",
+      description: "Taladro percutor inalámbrico de alta potencia para trabajos exigentes.",
       category: "Herramientas de Mano"
     },
     {
-      name: "Alicate Multipropósito",
-      price: "$12.990",
-      image: "/cat-herramientas.jpg",
-      description: "Alicate de presión profesional resistente.",
+      name: "Llave de Impacto Inalámbrico TOTAL",
+      image: "public/llave-impacto.jpg",
+      description: "..",
       category: "Herramientas de Mano"
     },
     {
-      name: "Set Destornilladores 6 pzas",
-      price: "$19.990",
-      image: "/cat-herramientas.jpg",
-      description: "Mango ergonómico, puntas endurecidas.",
+      name: "Juego Llaves Punta Corona 12PCS",
+      image: "public/juego-llaves.jpg",
+      description: "Juego de llaves de punta corona para tuercas y pernos de difícil acceso.",
       category: "Herramientas de Mano"
     },
     {
       name: "Mazo de Goma 1Kg",
-      price: "$7.990",
       image: "/cat-herramientas.jpg",
       description: "Sin daño a superficies delicadas.",
       category: "Herramientas de Mano"

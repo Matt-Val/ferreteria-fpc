@@ -8,9 +8,10 @@ const Hero = () => {
             <div className="hero-overlay" />
 
             <div className="hero-content">
-                <span className="hero-badge">Expertos Ferreteros Industriales</span>
+                
 
                 <h1 className="hero-title">
+                    F P C
                     Abastecimiento
                     <span className="orange">Industrial</span>
                 </h1>
