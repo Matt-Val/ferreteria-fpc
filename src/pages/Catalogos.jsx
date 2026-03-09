@@ -1,52 +1,55 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Drill, Wrench, Flame, ShieldCheck } from 'lucide-react';
+import { Drill, Wrench, Flame, Hand } from 'lucide-react';
 import '../styles/Catalogos.css';
 
-// Datos de los catálogos
-
-// Boton iluminado abajo del catalog, para enviarlo a catalogos, que sea llamativo
-// Herramientas electricas: 
-
+// Realizar boton para ver mas que sea llamativo (con luces)
+// Hacer una animacion ???
 const catalogosData = [
   {
     id: 1,
-    titulo: "Catálogo Herramientas Eléctricas",
-    descripcion: "..",
+    titulo: "Herramientas Eléctricas",
+    descripcion: "Taladros, amoladoras, sierras y más",
     paginas: 11,
     url: "/catalogo/cat-herramientas-electricas.pdf",
-    Icon: Drill
+    Icon: Drill,
+    color: "#3182ce"
   },
   {
     id: 2,
-    titulo: "Catálogo Automotriz y Herramientas de Mano",
-    descripcion: "..",
+    titulo: "Automotriz y Herramientas de Mano",
+    descripcion: "Llaves, dados, herramientas manuales",
     paginas: 77,
     url: "/catalogo/cat-herramientas-mano.pdf",
-    Icon: Wrech
+    Icon: Wrench,
+    color: "#e53e3e"
   },
   {
     id: 3,
-    titulo: "Catálogo Equipos de Soldar",
-    descripcion: "..",
+    titulo: "Equipos para Soldar",
+    descripcion: "Soldadoras, electrodos y accesorios",
     paginas: 20,
     url: "/catalogo/cat-equipos-soldar.pdf",
-    Icon: Flame
+    Icon: Flame,
+    color: "#dd6b20"
   },
   {
     id: 4,
-    titulo: "Catálogo Artículos de Seguridad Industrial",
-    descripcion: "..",
+    titulo: "Artículos Seguridad Industrial",
+    descripcion: "EPP, señalética y equipamiento",
     paginas: 107,
     url: "/catalogo/catalogo-seguridad-industrial.pdf",
-    Icon: ShieldCheck
+    Icon: Hand,
+    color: "#38a169"
   }
 ];
 
-const CatalogoCard = ({ titulo, descripcion, paginas, url }) => (
+const CatalogoCard = ({ titulo, descripcion, paginas, url, Icon, color }) => (
   <div className="catalogo-card">
-    <div className="catalogo-icon">📄</div>
+    <div className="catalogo-icon" style={{ color }}>
+      <Icon size={48} strokeWidth={2} />
+    </div>
     <h3 className="catalogo-titulo">{titulo}</h3>
     <p className="catalogo-descripcion">{descripcion}</p>
     <p className="catalogo-info">{paginas} páginas</p>
@@ -57,14 +60,14 @@ const CatalogoCard = ({ titulo, descripcion, paginas, url }) => (
         rel="noopener noreferrer"
         className="btn-ver"
       >
-         Ver Catálogo
+        Ver Catálogo
       </a>
       <a 
         href={url} 
         download
         className="btn-descargar"
       >
-         Descargar
+        Descargar
       </a>
     </div>
   </div>

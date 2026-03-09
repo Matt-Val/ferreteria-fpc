@@ -3,10 +3,18 @@
   padding: 4rem 0;
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('public/fondo-maestranza.jpg');
+    url('/fondo-maestranza.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.catalogos-page .container {
+  background: rgba(52, 58, 64, 0.85);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .catalogos-header {
@@ -16,14 +24,14 @@
 
 .catalogos-header h1 {
   font-size: 2.5rem;
-  color: #ffffff; /* Cambio a blanco para contraste */
+  color: #ffffff;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidad */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .catalogos-header p {
   font-size: 1.1rem;
-  color: #f7fafc; /* Cambio a blanco/gris claro */
+  color: #e2e8f0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
@@ -32,27 +40,39 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+  align-items: start; 
 }
 
 .catalogo-card {
-  background: rgba(226, 232, 240, 0.95); /* Gris claro */
+  background: rgba(226, 232, 240, 0.95);
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   backdrop-filter: blur(10px);
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 
 .catalogo-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background: rgba(241, 245, 249, 1); /* Gris más claro al hover */
+  background: rgba(241, 245, 249, 1);
 }
 
 .catalogo-icon {
-  font-size: 3rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.catalogo-card:hover .catalogo-icon {
+  transform: scale(1.1);
 }
 
 .catalogo-titulo {
@@ -78,6 +98,7 @@
   gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: auto; 
 }
 
 .btn-ver,
@@ -114,7 +135,7 @@
 }
 
 .catalogos-info {
-  background: rgba(255, 255, 255, 0.95); /* Semi-transparente */
+  background: rgba(255, 255, 255, 0.95);
   border-left: 4px solid #3182ce;
   padding: 1.5rem;
   border-radius: 8px;
@@ -130,7 +151,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .catalogos-page {
-    background-attachment: scroll; /* Mejor rendimiento en móvil */
+    background-attachment: scroll;
   }
 
   .catalogos-header h1 {
