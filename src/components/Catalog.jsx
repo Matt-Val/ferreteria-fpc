@@ -6,78 +6,66 @@ const productsData = {
     {
       name: "Máquina de Soldar MIG 250 ",
       image: "public/soldadura-mig.jpg",
-      description: "Soldadora inversora semi-industrial con doble proceso MIG y MMA",
-      category: "Equipos para Soldar"
+      description: "Máquina de soldar diseñada para uso semi-industrial con doble proceso MIG y MMA."
     },
     {
-      name: "Soldadora TIG AC/DC 250A",
-      image: "/cat-soldadura.jpg",
-      description: "Soldadura TIG para aluminio y acero inoxidable.",
-      category: "Equipos para Soldar"
+      name: "Compresor de Aire Huracan 220v",
+      image: "public/compresor-indura.jpg",
+      description: "Diseñado para acumular y aumentar presión de aire dentro de su tanque mediante compresión del mismo."
     },
     {
-      name: "Soldadora Arco Manual 160A",
-      image: "/cat-soldadura.jpg",
-      description: "Ideal para trabajos ligeros y reparaciones.",
-      category: "Equipos para Soldar"
+      name: "Soldadura Indura",
+      image: "public/caja-indura.png",
+      description: "Electrodos de alta calidad para soldadura de acero."
     },
     {
-      name: "Electrodos 6011 (5kg)",
-      image: "/cat-soldadura.jpg",
-      description: "Electrodos multipropósito de alta penetración.",
-      category: "Equipos para Soldar"
+      name: "Alambre MIG 15KG",
+      image: "public/alambre-mig.jpg",
+      description: "Alambre perfecto para lograr uniones fuertes y duraderas en tus proyectos de soldadura."
     },
   ],
   seguridad: [
     {
       name: "Guante Cabritilla",
       image: "public/guante-cabritilla.png",
-      description: "Guante de cuero suave y flexible, ideal para trabajos que requieren destreza y protección.",
-      category: "Ropa Seguridad Industrial"
+      description: "Guante de cuero suave y flexible, ideal para trabajos que requieren destreza y protección."
     },
     {
       name: "Coleto Soldador de Cuero",
       image: "public/coleto-soldador.png",
-      description: "Coleto de cuero profesional con alta resistencia al calor, chispas y salpicaduras.",
-      category: "Ropa Seguridad Industrial"
+      description: "Coleto de cuero profesional con alta resistencia al calor, chispas y salpicaduras."
     },
     {
       name: "Overol Poplin con Reflectante",
       image: "public/overol-poplin.jpg",
-      description: "Overol de trabajo con cintas reflectantes para mayor visibilidad y seguridad.",
-      category: "Ropa Seguridad Industrial"
+      description: "Overol de trabajo con cintas reflectantes para mayor visibilidad y seguridad."
     },
     {
       name: "Zapatos de Seguridad Punta Acero",
       image: "public/zapato-seguridad.jpg",
-      description: "Calzado de seguridad con punta de acero y suela antideslizante.",
-      category: "Ropa Seguridad Industrial"
+      description: "Calzado de seguridad con punta de acero y suela antideslizante."
     },
   ],
   herramientas: [
     {
-      name: "Taladro Percutor Inalámbrico Makita",
-      image: "public/taladro-percutor-makita.jpg",
-      description: "Taladro percutor inalámbrico de alta potencia para trabajos exigentes.",
-      category: "Herramientas de Mano"
+      name: "Taladro Atornillador Inalámbrico",
+      image: "public/taladro-harden.jpg",
+      description: "Taladro inalámbrico de alto rendimiento, incluye 1 batería y cargador."
     },
     {
-      name: "Llave de Impacto Inalámbrico TOTAL",
-      image: "public/llave-impacto.jpg",
-      description: "..",
-      category: "Herramientas de Mano"
+      name: "Sierra Circular 185mm",
+      image: "public/sierra-circular-harden.jpg",
+      description: "Sierra circular de alta calidad para cortes precisos en diversos materiales."
     },
     {
-      name: "Juego Llaves Punta Corona 12PCS",
-      image: "public/juego-llaves.jpg",
-      description: "Juego de llaves de punta corona para tuercas y pernos de difícil acceso.",
-      category: "Herramientas de Mano"
+      name: "Rotomartillo",
+      image: "public/rotomartillo-makita.jpg",
+      description: "Rotomartillo de potencia y durabilidad, ideal para perforación en concreto y piedra."
     },
     {
-      name: "Mazo de Goma 1Kg",
-      image: "/cat-herramientas.jpg",
-      description: "Sin daño a superficies delicadas.",
-      category: "Herramientas de Mano"
+      name: "Esmeril Angular",
+      image: "public/esmeril-angular-makita.jpg",
+      description: "Esmeril angular de alta calidad para pulido y corte en diversos materiales."
     },
   ],
 };
