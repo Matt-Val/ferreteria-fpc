@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Drill, Wrench, Flame, ShieldCheck } from 'lucide-react';
 import '../styles/Catalogos.css';
 
 // Datos de los catálogos
@@ -14,28 +15,32 @@ const catalogosData = [
     titulo: "Catálogo Herramientas Eléctricas",
     descripcion: "..",
     paginas: 11,
-    url: "/catalogo/cat-herramientas-electricas.pdf"
+    url: "/catalogo/cat-herramientas-electricas.pdf",
+    Icon: Drill
   },
   {
     id: 2,
     titulo: "Catálogo Automotriz y Herramientas de Mano",
     descripcion: "..",
     paginas: 77,
-    url: "/catalogo/cat-herramientas-mano.pdf"
+    url: "/catalogo/cat-herramientas-mano.pdf",
+    Icon: Wrech
   },
   {
     id: 3,
     titulo: "Catálogo Equipos de Soldar",
     descripcion: "..",
     paginas: 20,
-    url: "/catalogo/cat-equipos-soldar.pdf"
+    url: "/catalogo/cat-equipos-soldar.pdf",
+    Icon: Flame
   },
   {
     id: 4,
     titulo: "Catálogo Artículos de Seguridad Industrial",
     descripcion: "..",
     paginas: 107,
-    url: "/catalogo/catalogo-seguridad-industrial.pdf"
+    url: "/catalogo/catalogo-seguridad-industrial.pdf",
+    Icon: ShieldCheck
   }
 ];
 

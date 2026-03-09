@@ -1,7 +1,12 @@
 .catalogos-page {
   min-height: 70vh;
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('public/fondo-maestranza.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .catalogos-header {
@@ -11,13 +16,15 @@
 
 .catalogos-header h1 {
   font-size: 2.5rem;
-  color: #1a202c;
+  color: #ffffff; /* Cambio a blanco para contraste */
   margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidad */
 }
 
 .catalogos-header p {
   font-size: 1.1rem;
-  color: #718096;
+  color: #f7fafc; /* Cambio a blanco/gris claro */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .catalogos-grid {
@@ -28,17 +35,19 @@
 }
 
 .catalogo-card {
-  background: white;
+  background: rgba(226, 232, 240, 0.95); /* Gris claro */
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  backdrop-filter: blur(10px);
 }
 
 .catalogo-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(241, 245, 249, 1); /* Gris más claro al hover */
 }
 
 .catalogo-icon {
@@ -105,11 +114,12 @@
 }
 
 .catalogos-info {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparente */
   border-left: 4px solid #3182ce;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .catalogos-info p {
@@ -119,6 +129,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .catalogos-page {
+    background-attachment: scroll; /* Mejor rendimiento en móvil */
+  }
+
   .catalogos-header h1 {
     font-size: 2rem;
   }
