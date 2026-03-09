@@ -1,0 +1,139 @@
+.catalogos-page {
+  min-height: 70vh;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.catalogos-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.catalogos-header h1 {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.catalogos-header p {
+  font-size: 1.1rem;
+  color: #718096;
+}
+
+.catalogos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.catalogo-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.catalogo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.catalogo-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.catalogo-titulo {
+  font-size: 1.4rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.catalogo-descripcion {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.catalogo-info {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.catalogo-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-ver,
+.btn-descargar {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-ver {
+  background: #3182ce;
+  color: white;
+}
+
+.btn-ver:hover {
+  background: #2c5282;
+  transform: scale(1.05);
+}
+
+.btn-descargar {
+  background: #48bb78;
+  color: white;
+}
+
+.btn-descargar:hover {
+  background: #38a169;
+  transform: scale(1.05);
+}
+
+.catalogos-info {
+  background: #fff;
+  border-left: 4px solid #3182ce;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.catalogos-info p {
+  margin: 0;
+  color: #4a5568;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .catalogos-header h1 {
+    font-size: 2rem;
+  }
+
+  .catalogos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .catalogo-buttons {
+    flex-direction: column;
+  }
+
+  .btn-ver,
+  .btn-descargar {
+    min-width: 100%;
+  }
+}

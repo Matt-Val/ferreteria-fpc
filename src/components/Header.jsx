@@ -44,7 +44,7 @@ const Header = () => {
                     <nav className={`nav ${isMenuOpen ? 'nav-active' : ''}`}>
                         <ul className="nav-list">
                             <li><a href="/" className="nav-link">Inicio</a></li>
-                            <li><a href="#catalogo" className="nav-link">Catálogo</a></li>
+                            <li><a href="/catalogos" className="nav-link">Catálogos</a></li>
                             <li><a href="#cotizar" className="nav-link">Cotizar</a></li>
                             <li><a href="#contacto" className="nav-link">Contacto</a></li>
                         </ul>
