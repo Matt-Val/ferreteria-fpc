@@ -22,9 +22,13 @@ const Footer = () => {
         {/* Brand */}
         <div className="footer-col">
           <div className="footer-logo-wrap">
-            <div className="footer-logo-badge">FPC</div>
+            <img
+              src="/Logo-fpc.png"
+              alt="FPC Abastecimiento Industrial"
+              style={{ height: '48px', width: 'auto', objectFit: 'contain' }}
+            />
             <div className="footer-logo-text">
-              <span className="logo-top">Abastecimiento</span>
+              <span className="logo-top">FPC Abastecimiento</span>
               <span className="logo-sub">Industrial</span>
             </div>
           </div>

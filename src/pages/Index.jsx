@@ -9,7 +9,7 @@ import '../styles/index.css';
 
 const WhatsAppButton = () => (
   <a
-    href="https://wa.me/56954274397"
+    href="https://wa.me/56948542010"
     target="_blank"
     rel="noopener noreferrer"
     style={{

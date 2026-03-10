@@ -34,9 +34,13 @@ const Header = () => {
             <header className="header">
                 <div className="container header-container">
                     <a href="/" className="logo">
-                        <div className="logo-badge">FPC</div>
+                        <img
+                            src="/Logo-fpc.png"
+                            alt="FPC Abastecimiento Industrial"
+                            style={{ height: '42px', width: 'auto', objectFit: 'contain' }}
+                        />
                         <div className="logo-text">
-                            <span className="logo-top">Abastecimiento</span>
+                            <span className="logo-top">FPC Abastecimiento</span>
                             <span className="logo-sub">Industrial</span>
                         </div>
                     </a>
@@ -44,7 +48,7 @@ const Header = () => {
                     <nav className={`nav ${isMenuOpen ? 'nav-active' : ''}`}>
                         <ul className="nav-list">
                             <li><a href="/" className="nav-link">Inicio</a></li>
-                            <li><a href="/catalogos" className="nav-link">Catálogos</a></li>
+                            <li><a href="#catalogo" className="nav-link">Catálogo</a></li>
                             <li><a href="#cotizar" className="nav-link">Cotizar</a></li>
                             <li><a href="#contacto" className="nav-link">Contacto</a></li>
                         </ul>

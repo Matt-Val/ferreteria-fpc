@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import { Drill, Wrench, Flame, Hand } from 'lucide-react';
 import '../styles/Catalogos.css';
 
-// Realizar boton para ver mas que sea llamativo (con luces)
 // Hacer una animacion ???
 const catalogosData = [
   {
@@ -39,7 +38,7 @@ const catalogosData = [
     titulo: "Artículos Seguridad Industrial",
     descripcion: "EPP, señalética y equipamiento",
     paginas: 107,
-    url: "/catalogo/catalogo-seguridad-industrial.pdf",
+    url: "/catalogo/cat-seguridad-industrial.pdf",
     Icon: Hand,
     color: "#38a169"
   }
@@ -91,9 +90,6 @@ const Catalogos = () => {
             ))}
           </div>
 
-          <div className="catalogos-info">
-            <p>💡 <strong>Tip:</strong> Puedes ver los catálogos en tu navegador o descargarlos para consultarlos sin conexión.</p>
-          </div>
         </div>
       </main>
 
