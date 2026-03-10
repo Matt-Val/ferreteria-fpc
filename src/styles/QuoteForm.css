@@ -157,12 +157,42 @@
 @media (max-width: 860px) {
   .quote-container {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
+  }
+
+  .quote-section {
+    padding: 3rem 0 2.5rem;
   }
 }
 
 @media (max-width: 480px) {
+  .quote-section {
+    padding: 2.5rem 0 2rem;
+  }
+
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .quote-form-card {
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+  }
+
+  .quote-info .section-title {
+    font-size: 1.6rem;
+  }
+
+  .quote-text {
+    font-size: 0.85rem;
+  }
+
+  .quote-benefits li {
+    font-size: 0.82rem;
+  }
+
+  .btn-submit {
+    padding: 0.9rem 1rem;
+    font-size: 0.82rem;
   }
 }
