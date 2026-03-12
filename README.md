@@ -1,16 +1,41 @@
-# React + Vite
+# FPC Abastecimiento - Proyecto de Ferretería Industrial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el código fuente de una plataforma web desarrollada para **FPC Abastecimiento**, una ferretería industrial. El proyecto fue diseñado para modernizar la presencia digital de la marca, facilitando la visualización de catálogos y la captación de clientes.
 
-Currently, two official plugins are available:
+> **Nota:** Este proyecto fue desarrollado y entregado con éxito al cliente. Se mantiene en este repositorio con fines de **exhibición de portafolio**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Proyecto Funcionando
+Puedes ver el proyecto funcionando aquí:  
+ **[Visitar FPC Abastecimiento](https://www.abastecimientoindustrialfpc.cl/)**
 
-## React Compiler
+## Objetivo del Proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Crear una interfaz de usuario intuitiva, rápida y profesional que permitiera a los clientes industriales consultar suministros y realizar cotizaciones de manera directa a través de canales digitales.
 
-## Expanding the ESLint configuration
+##  Funcionalidades Destacadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   **Landing Page de Alto Impacto**: Diseño enfocado en la conversión con secciones de Hero, Marcas y Catálogo.
+-   **Navegación Dinámica**: Implementación de rutas con `react-router-dom` para separar la página principal de los catálogos detallados.
+-   **Sistema de Cotización**: Formulario integrado para facilitar la toma de pedidos.
+-   **Canal de Venta Directo**: Integración estratégica de un botón flotante de **WhatsApp** para atención inmediata.
+-   **Diseño Responsive**: Interfaz totalmente adaptable a móviles para facilitar consultas en terreno (obras/talleres).
+
+##  Tecnologías y Herramientas
+
+-   **Frontend**: React 19 con arquitectura de componentes funcionales.
+-   **Tooling**: Vite para un desarrollo y build optimizado.
+-   **Iconografía**: Lucide React para una interfaz limpia y moderna.
+-   **Routing**: React Router 7 para la gestión de navegación SPA.
+-   **Estilos**: CSS modular enfocado en rendimiento y mantenibilidad.
+
+##  Estructura del Código
+
+Para demostrar la organización del proyecto:
+
+-   `src/components/`: Componentes modulares y reutilizables (Hero, Brands, QuoteForm, etc).
+-   `src/pages/`: Vistas principales de la aplicación.
+-   `src/styles/`: Sistema de diseño consistente mediante CSS.
+-   `App.jsx`: Orquestación de rutas y lógica global.
+
+
+**Desarrollado por [Matt-Val](https://github.com/Matt-Val)**  
